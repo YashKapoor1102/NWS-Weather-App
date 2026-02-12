@@ -69,20 +69,20 @@ cd NWS-Weather-App
 ### Backend Setup
 1. Create a ".env" file in the backend folder.
 2. Run:
-   '''
+   ```
    cd backend
    npm install
    npm run dev
-   '''
+   ```
 
 ### Frontend Setup
 1. Create a .env file in the frontend folder.
 2. Run:
-   '''
+   ```
    cd frontend
    npm install
    npm run dev
-   '''
+   ```
    
 
 ## Quality Assurance
