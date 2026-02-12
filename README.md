@@ -48,6 +48,14 @@ The frontend is built using React and is responsible for:
   - weatherApi.js: fetches the weather information from the backend
 
 
+## Sequence Diagram
+
+The diagram below shows the interaction flow when a user loads the application and
+weather data is retrieved from the backend and NWS API.
+
+<img width="1081" height="843" alt="Sequence-Diagram drawio" src="https://github.com/user-attachments/assets/b9b5d287-83dc-4e89-84aa-00f50b56300d" />
+
+
 ## Deployment
 
 - The application is deployed as two separate services on Render:
