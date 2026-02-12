@@ -4,6 +4,8 @@
 
 Please go to https://nws-weather-app-1.onrender.com/ to access the NWS Weather Application.
 
+![Application Screenshot](docs/app-screenshot.png)
+
 
 ## Description
 This project is a full-stack web application that displays weather forecast data using the
