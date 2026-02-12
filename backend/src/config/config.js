@@ -13,4 +13,5 @@ export const config = {
     PORT: Number(process.env.PORT),
     CORS_ORIGIN: process.env.CORS_ORIGIN,
     NWS_USER_AGENT: process.env.NWS_USER_AGENT,
+    CACHE_TTL_SECONDS: Number(process.env.CACHE_TTL_SECONDS ?? 300)
 }
