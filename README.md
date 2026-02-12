@@ -53,7 +53,7 @@ The frontend is built using React and is responsible for:
 The diagram below shows the interaction flow when a user loads the application and
 weather data is retrieved from the backend and NWS API.
 
-<img width="1081" height="843" alt="Sequence-Diagram drawio" src="https://github.com/user-attachments/assets/b9b5d287-83dc-4e89-84aa-00f50b56300d" />
+![Sequence Diagram](docs/Sequence-Diagram.drawio.png)
 
 
 ## Deployment
@@ -117,6 +117,13 @@ A GitHub Actions pipeline automatically:
   - Installs dependencies
   - Runs all tests
   - Fails the build if any test fails
+
+
+## Future Improvements
+- Replace the in-memory cache with Redis to support horizontal scaling and enhance
+reliability in production.
+- Add API rate limiting to better protect both the backend service and the external
+NWS API.
 
 
 ## Credits
