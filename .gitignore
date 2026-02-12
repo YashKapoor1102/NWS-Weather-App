@@ -1,0 +1,13 @@
+# Frontend (build artifacts, dependencies)
+/frontend/node_modules
+/frontend/dist/
+/frontend/build
+
+# Backend (dependencies, logs, environment variables)
+/backend/node_modules/
+/backend/logs/
+/backend/.env
+
+.DS_Store
+.idea/
+.vscode/
