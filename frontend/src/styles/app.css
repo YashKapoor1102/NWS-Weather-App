@@ -1,0 +1,257 @@
+:root {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-seri, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #111;
+    background: #f7f7fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+h1 {
+    margin: 0 0 6px 0;
+}
+
+.city {
+    margin: 0;
+    font-size: 18px;
+}
+
+.muted {
+    color: #555;
+    font-size: 14px;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 14px;
+}
+
+.button {
+    padding: 9px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #f1f1f6;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e7e7ef;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cardBody {
+    margin-top: 12px;
+}
+
+.currentRow {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.temp {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.summary {
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.details summary {
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.stripWrap {
+  margin-top: 12px;
+}
+
+.stripTitle {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.forecastStrip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 6px;
+}
+
+.forecastStrip::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecastStrip::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.stripWrap::before,
+.stripWrap::after {
+  content: "";
+  position: absolute;
+  top: 36px;           
+  bottom: 0;
+  width: 24px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.stripWrap::before {
+  left: 0;
+  background: linear-gradient(to right, #f5f5f7, transparent);
+}
+
+.stripWrap::after {
+  right: 0;
+  background: linear-gradient(to left, #f5f5f7, transparent);
+}
+
+.periodChip {
+  flex: 0 0 auto;
+  min-width: 96px;
+  scroll-snap-align: start;
+
+  border: 1px solid #e7e7ef;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.periodChip:hover {
+  background: #f7f7fb;
+}
+
+.periodChip.selected {
+  border-color: #cfe8ff;
+  background: #eef7ff;
+}
+
+.chipName {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.chipIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+  margin-bottom: 6px;
+}
+
+.chipTemp {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.loading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 12px;
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-top-color: #888;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #fff0f0;
+    border: 1px solid #ffd2d2;
+    margin-top: 10px;
+}
