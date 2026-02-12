@@ -65,6 +65,9 @@ weather data is retrieved from the backend and NWS API.
 
 - Both services are deployed independently, allowing the frontend and backend to scale
 and be updated separately.
+- **Note**: The backend is hosted on the Render free tier. Due to cold-start behavior
+on the free plan, the first request after a period of inactivity may take some time
+to respond. Subsequent requests are significantly faster.
 
 ## Local Development
 
