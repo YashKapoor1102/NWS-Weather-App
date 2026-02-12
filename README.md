@@ -53,7 +53,7 @@ The frontend is built using React and is responsible for:
 The diagram below shows the interaction flow when a user loads the application and
 weather data is retrieved from the backend and NWS API.
 
-![Sequence Diagram](docs/sequence-diagram.png)
+![Sequence Diagram](docs/Sequence-Diagram.drawio.png)
 
 
 ## Deployment
