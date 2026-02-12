@@ -62,7 +62,6 @@ and be updated separately.
 
 ### Clone the Repository
 ```
-bash
 git clone https://github.com/YashKapoor1102/NWS-Weather-App.git
 cd NWS-Weather-App
 ```
@@ -71,7 +70,6 @@ cd NWS-Weather-App
 1. Create a ".env" file in the backend folder.
 2. Run:
    '''
-   bash
    cd backend
    npm install
    npm run dev
@@ -81,7 +79,6 @@ cd NWS-Weather-App
 1. Create a .env file in the frontend folder.
 2. Run:
    '''
-   bash
    cd frontend
    npm install
    npm run dev
