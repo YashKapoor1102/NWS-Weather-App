@@ -61,26 +61,32 @@ and be updated separately.
 ## Local Development
 
 ### Clone the Repository
-'''bash
+```
+bash
 git clone https://github.com/YashKapoor1102/NWS-Weather-App.git
-cd NWS-Weather-App'''
+cd NWS-Weather-App
+```
 
 ### Backend Setup
 1. Create a ".env" file in the backend folder.
 2. Run:
-   '''bash
+   '''
+   bash
    cd backend
    npm install
-   npm run dev'''
+   npm run dev
+   '''
 
 ### Frontend Setup
 1. Create a .env file in the frontend folder.
 2. Run:
-   '''bash
+   '''
+   bash
    cd frontend
    npm install
-   npm run dev'''
-
+   npm run dev
+   '''
+   
 
 ## Quality Assurance
 
