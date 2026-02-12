@@ -119,6 +119,13 @@ A GitHub Actions pipeline automatically:
   - Fails the build if any test fails
 
 
+## Future Improvements
+- Replace the in-memory cache with Redis to support horizontal scaling and enhance
+reliability in production.
+- Add API rate limiting to better protect both the backend service and the external
+NWS API.
+
+
 ## Credits
 
 - Yash Kapoor
